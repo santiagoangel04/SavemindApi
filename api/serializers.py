@@ -8,4 +8,4 @@ class SavemindTranlateSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = SavemindTranlate
-        fields = ['id','from_language','to_language','word','translated_Word','context_word_use']
+        fields = ['id','from_language','to_language','word','translated_Word','context_word_use','status']
