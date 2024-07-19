@@ -4,5 +4,6 @@ from api import viewsModelSerializer as views
 
 
 urlpatterns =[
-    path('saveword',views.TranslateWordView.as_view()),
+    path('saveword',views.TranslateWordViewCR.as_view()),
+    path('saveword_elements/<int:id>',views.TranslateWordViewUD.as_view())
 ]
